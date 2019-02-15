@@ -37,7 +37,7 @@ my $s =<<"EOL";
 From: "$me" <$me\@$host>
 To: "Foo Bar" <foobar\@example.net>
 Cc: "Buz Aldrin" <buz\@example.org>,
- "heiwa4126" <heiwa4126\@example.com>,
+ "heiwa4126" <heiwa4126\@example.com>
 Date: @{[date2822()]}
 Subject: @{[mimeHead("ここがタイトルだ!!!")]}
 MIME-Version: 1.0
