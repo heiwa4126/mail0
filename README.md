@@ -7,7 +7,8 @@
 ことを目標としたメール送信のサンプルコード。
 世の中にはそういう状況もあるのでしょうがないです。
 
-`sendmail -t`でメールが送信できることが前提。
+`sendmail -t`でメールが送信できることが前提
+(Postfix, exim4 and sendmailでOK)。
 
 
 # TODO
