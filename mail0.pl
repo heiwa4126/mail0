@@ -39,7 +39,7 @@ To: "Foo Bar" <foobar\@example.net>
 Cc: "Buz Aldrin" <buz\@example.org>,
  "heiwa4126" <heiwa4126\@example.com>
 Date: @{[date2822()]}
-Subject: @{[mimeHead("ここがタイトルだ!!!")]}
+Subject: @{[mimeHead("ここらがタイトルだ!!!")]}
 MIME-Version: 1.0
 Content-Type: text/plain; charset="ISO-2022-JP"
 Content-Transfer-Encoding: 7bit
@@ -65,7 +65,13 @@ close($mail) or die($!);
 
 # ローカルのMTAが正しく設定されていない場合 or
 # SMTPのアドレスを与えられたような場合、
-# Net::SMTPが標準モジュールなのでそれを使う
-
+# Net::SMTP が標準モジュールなのでそれを使う
+# use Net::SMTP;
+# my $smtp = Net::SMTP->new('111.222.333.444', Debug => 0);
+# $smtp->mail($from);
+# $smtp->to($to);
+# $smtp->data();
+# $smtp->datasend($s);
+# $smtp->dataend();
 
 0;
