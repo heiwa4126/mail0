@@ -63,4 +63,9 @@ open(my $mail, '|sendmail -t') or die($!);
 print $mail $s;
 close($mail) or die($!);
 
+# ローカルのMTAが正しく設定されていない場合 or
+# SMTPのアドレスを与えられたような場合、
+# Net::SMTPが標準モジュールなのでそれを使う
+
+
 0;
